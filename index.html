@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NerdPOS Showcase</title>
+    <meta
+      name="description"
+      content="Public-safe showcase for NerdPOS: Arabic-first cashier flows, payment screens, inventory views, and compliance-facing UI."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="#top">NerdPOS Showcase</a>
+        <nav>
+          <a href="#surfaces">Surfaces</a>
+          <a href="#boundary">Boundary</a>
+          <a href="https://github.com/KareemQabil/nerd-pos" target="_blank" rel="noreferrer">Repo</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Arabic-first POS · Public-safe case study</p>
+            <h1>Cashier, payment, inventory, and compliance flows shown through real product screenshots.</h1>
+            <p>
+              This repo is the public-facing showcase layer for NerdPOS. It demonstrates interface quality
+              and workflow direction without exposing private business logic, backend code, or production data.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="https://github.com/KareemQabil/nerd-pos" target="_blank" rel="noreferrer">View public repo</a>
+              <a class="button secondary" href="https://github.com/KareemQabil/KareemQabil" target="_blank" rel="noreferrer">Profile</a>
+            </div>
+            <ul class="chips">
+              <li>Cashier UI</li>
+              <li>Payment Flow</li>
+              <li>Receipt / QR</li>
+              <li>Inventory</li>
+              <li>Compliance</li>
+            </ul>
+          </div>
+          <div class="hero-image card">
+            <img src="assets/screenshots/nerdpos-live-pos.png" alt="NerdPOS live cashier order-building flow" />
+          </div>
+        </section>
+
+        <section class="section" id="surfaces">
+          <div class="section-head">
+            <p class="eyebrow">Product surfaces</p>
+            <h2>What the showcase actually proves</h2>
+            <p>
+              The screenshots below come from a safe frontend-only copy. They are intended to show workflow shape,
+              Arabic-first interface handling, and module breadth.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article class="card feature">
+              <div class="copy">
+                <span class="tag">Order building</span>
+                <h3>Live POS session</h3>
+                <p>
+                  Active session, real cart state, totals, tax, and checkout action from the cashier surface.
+                </p>
+              </div>
+              <img src="assets/screenshots/nerdpos-live-pos.png" alt="Live POS session with order cart and product grid" />
+            </article>
+
+            <article class="card">
+              <div class="copy">
+                <span class="tag">Payment</span>
+                <h3>Payment collection</h3>
+                <p>
+                  Cash payment UI with received amount handling, keypad, and confirmation step.
+                </p>
+              </div>
+              <img src="assets/screenshots/nerdpos-payment-flow.png" alt="NerdPOS cash payment flow" />
+            </article>
+
+            <article class="card">
+              <div class="copy">
+                <span class="tag">Receipt</span>
+                <h3>Receipt preview</h3>
+                <p>
+                  Receipt surface showing totals, tax, payment method, and QR/invoice output.
+                </p>
+              </div>
+              <img src="assets/screenshots/nerdpos-receipt-flow.png" alt="NerdPOS receipt preview with QR code" />
+            </article>
+
+            <article class="card">
+              <div class="copy">
+                <span class="tag">Operations</span>
+                <h3>Inventory dashboard</h3>
+                <p>
+                  Operational inventory surface for stock visibility and workflow control.
+                </p>
+              </div>
+              <img src="assets/screenshots/nerdpos-inventory-dashboard.png" alt="NerdPOS inventory dashboard" />
+            </article>
+
+            <article class="card">
+              <div class="copy">
+                <span class="tag">Compliance</span>
+                <h3>Compliance surface</h3>
+                <p>
+                  Interface direction for invoice status and submission-oriented workflows.
+                </p>
+              </div>
+              <img src="assets/screenshots/nerdpos-compliance-dashboard.png" alt="NerdPOS compliance dashboard" />
+            </article>
+          </div>
+        </section>
+
+        <section class="section boundary" id="boundary">
+          <div class="section-head">
+            <p class="eyebrow">Boundary</p>
+            <h2>Public-safe by design</h2>
+          </div>
+
+          <div class="boundary-grid">
+            <article class="card compact">
+              <h3>Public here</h3>
+              <ul>
+                <li>Real screenshots</li>
+                <li>Workflow framing</li>
+                <li>UI and product direction</li>
+                <li>Case-study presentation</li>
+              </ul>
+            </article>
+            <article class="card compact">
+              <h3>Kept private</h3>
+              <ul>
+                <li>Production backend logic</li>
+                <li>Customer data and secrets</li>
+                <li>Business-specific ERP behavior</li>
+                <li>Sensitive operational implementation details</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
