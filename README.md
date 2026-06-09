@@ -1,8 +1,8 @@
 # NerdPOS Showcase
 
-Public-safe case study and screenshot showcase for an Arabic-first POS product direction.
+Public-safe case study and screenshot showcase for an Arabic-first POS and operations product direction.
 
-This repo exists to show the product surface clearly without exposing private backend logic, production data, or business-sensitive implementation details.
+This repo exists to show the product surface clearly without exposing private backend logic, production data, or business-sensitive implementation details. The screenshots were captured from a safe frontend-only copy, and the case-study framing is designed to communicate product depth in a recruiter-friendly way.
 
 ## What this showcase covers
 
@@ -11,6 +11,7 @@ This repo exists to show the product surface clearly without exposing private ba
 - Receipt preview with QR/invoice surface
 - Inventory dashboard direction
 - Compliance-facing dashboard direction
+- Public explanation of how these surfaces fit into a broader ERP/POS workflow
 
 ## Why this repo exists
 
@@ -27,6 +28,18 @@ NerdPOS is positioned around:
 - Compliance-aware operations
 - Practical business UX for real teams
 
+## System map
+
+```mermaid
+flowchart TD
+    A[Cashier session] --> B[Cart and totals]
+    B --> C[Payment collection]
+    C --> D[Receipt and invoice output]
+    D --> E[Operational history]
+    E --> F[Inventory visibility]
+    E --> G[Compliance tracking]
+```
+
 ## Workflow map
 
 ```mermaid
@@ -39,6 +52,13 @@ flowchart LR
     F --> G[Update operational history]
     G --> H[Inventory and compliance surfaces]
 ```
+
+## What the evidence proves
+
+- The cashier surface is not a mock landing page. It includes product selection, cart state, tax and totals, and payment transition.
+- The payment flow is part of the same operational thread, not a disconnected popup.
+- Receipt output is treated as a real workflow surface with totals and QR/invoice framing.
+- Inventory and compliance are presented as adjacent operational modules rather than afterthoughts.
 
 ## Showcase boundary
 
@@ -85,6 +105,15 @@ Shows the compliance-oriented interface direction for invoice and submission wor
 
 ![Compliance dashboard](assets/screenshots/nerdpos-compliance-dashboard.png)
 
+## Why this matters publicly
+
+For business software, raw code is not always the best public proof. A stronger public signal is often:
+
+- honest screenshots
+- clear workflow explanation
+- system boundaries stated explicitly
+- product thinking shown without leaking private implementation
+
 ## Public vs private boundary
 
 Public here:
@@ -101,8 +130,7 @@ Private by design:
 - Sensitive ERP/POS implementation details
 - Operational or financial data
 
-## Related public repos
+## Related public surfaces
 
-- [nerd-pos](https://github.com/KareemQabil/nerd-pos)
-- [nerdERPs](https://github.com/KareemQabil/nerdERPs)
-- [KareemQabil](https://github.com/KareemQabil)
+- Main profile: [KareemQabil](https://github.com/KareemQabil)
+- Portfolio: [kerimqabil.me](https://kerimqabil.me)
