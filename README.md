@@ -4,6 +4,11 @@ Public-safe case study and screenshot showcase for an Arabic-first POS and opera
 
 This repo exists to show the product surface clearly without exposing private backend logic, production data, or business-sensitive implementation details. The screenshots were captured from a safe frontend-only copy, and the case-study framing is designed to communicate product depth in a recruiter-friendly way.
 
+## Supporting docs
+
+- [Workflow notes](docs/workflow-notes.md)
+- [Public release notes](docs/public-release-notes.md)
+
 ## What this showcase covers
 
 - Cashier order-building flow
