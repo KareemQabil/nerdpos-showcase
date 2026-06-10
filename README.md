@@ -9,6 +9,8 @@ This repo exists to show the product surface clearly without exposing private ba
 - [Workflow notes](docs/workflow-notes.md)
 - [Public release notes](docs/public-release-notes.md)
 
+![NerdPOS public showcase map](assets/infographics/overview.svg)
+
 ## What this showcase covers
 
 - Cashier order-building flow
